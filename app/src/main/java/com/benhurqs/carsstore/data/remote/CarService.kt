@@ -9,7 +9,6 @@ import retrofit2.http.GET
 import retrofit2.http.POST
 
 interface CarService {
-
     @GET("/cars.json")
     suspend fun getCarList(): CarDTO
 
