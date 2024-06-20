@@ -16,6 +16,6 @@ interface LeadDao {
     @Query("SELECT * FROM leaddb")
     suspend fun getLeads(): List<LeadDB>
 
-    @Query("DELETE FROM LeadDb")
+    @Query("DELETE FROM leaddb")
     suspend fun clearDb()
 }

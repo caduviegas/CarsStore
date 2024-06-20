@@ -9,7 +9,7 @@ import com.benhurqs.carsstore.domain.model.Lead
 data class LeadDB (
 
     @PrimaryKey(autoGenerate = true)
-    val laedId: Long = 0,
+    val leadId: Long = 0,
     val carId: Long,
     val nomeLead: String,
     val emailLead: String

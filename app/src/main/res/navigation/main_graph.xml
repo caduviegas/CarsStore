@@ -36,7 +36,7 @@
         tools:layout="@layout/fragment_lead" >
         <argument
             android:name="car"
-            app:argType="com.example.ws_work_cars.domain.model.Car" />
+            app:argType="com.benhurqs.carsstore.domain.model.Car" />
         <action
             android:id="@+id/action_leadFragment_to_homeFragment"
             app:destination="@id/homeFragment"
