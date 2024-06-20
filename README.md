@@ -1,11 +1,5 @@
 # Projeto CarStore
 
-<div style="display: flex; justify-content: space-around;">
-  <img src="https://github.com/caduviegas/CarsStore/blob/master/app/src/main/res/drawable-readme/splash_project.png?raw=true" alt="Start" width="200" height="400"/>
-  <img src="https://github.com/caduviegas/CarsStore/blob/master/app/src/main/res/drawable-readme/home_project.png?raw=true" alt="Home" width="200" height="400"/>
-  <img src="https://github.com/caduviegas/CarsStore/blob/master/app/src/main/res/drawable-readme/lead_project.png?raw=true" alt="Lead" width="200" height="400"/>
-</div>
-
 ## 🎯 Tomada de Decisões
 
 ### Arquiteturas
