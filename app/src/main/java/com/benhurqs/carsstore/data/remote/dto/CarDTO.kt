@@ -6,6 +6,10 @@ import java.text.NumberFormat
 import java.util.Locale
 
 class CarDTO (
+    val cars: Array<CarsInformations>
+)
+
+class CarsInformations(
     val ano: String?,
     val combustivel: String?,
     val cor: String?,
@@ -22,7 +26,7 @@ class CarDTO (
     val timestampCadastro: String,
     @Json(name = "valor_fipe")
     val valorFipe: String
-) {
+){
 
     fun toCar(): Car {
 
@@ -34,18 +38,18 @@ class CarDTO (
             marcaNome = marcaNome ?: "",
             nomeModelo = nomeModelo ?: "",
             numPortas = numPortas ?: "",
-            valorFipe = tratamentoDoValor(valorFipe)
+            valorFipe = treatmentOfValue(valorFipe)
         )
     }
 
-    private fun tratamentoDoValor(valor: String): String {
+    private fun treatmentOfValue(valor: String): String {
 
-        val formatador = NumberFormat.getCurrencyInstance(Locale("pt", "br"))
-        val valorConvertido = valor.toDouble()
+        val former = NumberFormat.getCurrencyInstance(Locale("pt", "br"))
+        val convertValue = valor.toDouble()
 
-        if (valorConvertido < 1000) {
-            return formatador.format(valorConvertido * 1000).toString()
+        if (convertValue < 1000) {
+            return former.format(convertValue * 1000).toString()
         }
-        return formatador.format(valorConvertido).toString()
+        return former.format(convertValue).toString()
     }
 }
