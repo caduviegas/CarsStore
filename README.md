@@ -3,7 +3,7 @@
 ## 🎯 Tomada de Decisões
 
 ### Arquiteturas
-Foi decidido utilizar MVVM + Clean neste projeto para seguir os padrões atualmente utilizados no mercado de trabalho. Esta abordagem proporciona um código mais limpo, de fácil manutenção, entendimento e testes.
+Decidiu-se utilizar MVVM + Clean neste projeto para seguir os padrões atualmente utilizados no mercado de trabalho. Esta abordagem proporciona um código mais limpo, de fácil manutenção, entendimento e testes.
 
 ### Dados do Usuário
 Para adquirir os dados do usuário, foi adicionado um fragmento onde ele pode inserir seu nome e e-mail para ser contactado futuramente.
